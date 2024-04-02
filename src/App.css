@@ -1,0 +1,103 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 2rem;
+  padding-top: 100px;
+}
+.selected {
+  background-color: green; 
+}
+
+.notselected {
+  background-color: rgba(255, 255, 255, 0.332);
+  color: black;
+}
+button{
+
+  padding: 10px;
+  width: 80px;
+  border:none;  
+  border-radius: 1px;
+}
+/* .homeparent{
+  display: flex;
+  flex-direction: column;
+} */
+.oppie-intro{
+  margin: 20px;
+  padding: 20px;
+text-align: center;
+}
+
+.rotatable,.rotatable:hover {
+  transition: transform 0.3s ease-out; /* Use 'ease-out' timing function for a quick start and slow finish */
+}
+
+.rotate,.rotatable:hover  {
+  transform: scale(1.5) ; /* Rotate the image by 360 degrees for a complete spin */
+  
+}
+
+.rotatable {
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Define transitions for transform and opacity */
+}
+
+.rotatable:active {
+  transform: scale(1.5); /* Scale the element on click */
+  opacity: 0; /* Make the element transparent on click */
+}
+.Home{
+  display: flex;
+}
+
+
+
+.parentSigninandout{
+  display: flex;
+}
+.oppie-text{
+  padding: 20px 20px 40px 20px;
+  text-align: center;
+}
+.h1name{
+  font-size: 40px;
+  font-weight: 800;
+}
+.pcaption{
+  font-size: 25px;
+  font-weight: 500;
+}
+.pcaptionhome{
+  font-size: 20px;
+  font-weight: 500;
+}
+.signinandoutbut{
+  text-align: center;
+}
+@media (max-width: 600px) {
+#root{
+  text-align: center;
+}
+.Home{
+  flex-direction: column;
+}
+.parentSigninandout{
+  flex-direction: column;
+}
+}
+
+
+/* ...........oppieintro......... */
+/* .loading {
+  font-size: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */

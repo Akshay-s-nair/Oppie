@@ -1,0 +1,12 @@
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  .pcaption {
+    overflow: hidden; /* Hide overflowing text */
+    animation: typing 3s steps(40, end); /* Adjust duration and steps as needed */
+  }

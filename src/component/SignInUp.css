@@ -1,0 +1,231 @@
+.formparent{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    text-align: center;
+}
+.formsignin,.formsignup{
+    border: 1px solid white;
+    width: 100px;
+    font-size: 1.3rem/3;
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 400px;
+    border-radius: 5px;
+    /* From https://css.glass */
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.9px);
+-webkit-backdrop-filter: blur(12.9px);
+border: 1px solid rgba(255, 255, 255, 0.26);
+}
+input{
+    height: 20px;
+    margin: 5px;
+    width: 350px;
+    margin: 10px;
+}
+input::placeholder {
+    font: 13px sans-serif;
+}
+.drop{
+    margin-top: 10px;
+}
+input.submit{
+    margin: 10px;
+    width: 60px;
+    padding: 4px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color:green ;
+    color: aliceblue;
+    font-weight:200;
+}
+input.submit:hover{
+    transition: 0.5s;
+    background-color: rgb(73, 73, 73);
+}
+a{
+    text-decoration: none;
+}
+span.Here{
+    color: rgb(0, 196, 0);
+    font-weight: 700;
+}
+span.Here:hover{
+    color: aliceblue;
+}
+input{
+    color: black;
+    background-color: rgb(232, 232, 232);
+    
+border-radius: 16px;
+border: 1px solid rgba(255, 255, 255, 0.26);
+
+    padding: 2px;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    form.formsignup, form.formsignin{
+        width: 700px;
+    }
+    input{
+        width: 250px;
+    }
+    select#year,select#department{
+        font-size: 15px;
+        padding: 4px;
+    }
+    label{
+        font-size: 16px;
+    }
+    #root{
+        padding: 1px;
+    }
+}
+
+
+
+
+
+/* ................MessageBox...................... */
+.message-list {
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.213);
+}
+
+.card {
+  width: 100%;
+}
+
+.chat {
+  margin-right: 2%;
+  margin-left: 2%;
+  padding: 0.5%;
+  border-radius: 10px;
+}
+
+.user {
+  /* color: greenyellow; */
+  color: black;
+}
+
+.bot {
+  /* color: aqua; */
+  color: aliceblue;
+}
+/* .user{
+  margin-left: 1000px;
+} */
+.user,.bot{
+  font-size: 20px;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.input-group input {
+  margin-right: 5px;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .user,.bot{
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin: 0 auto;
+    max-width: 75%;
+  }
+
+  .chat {
+    padding: 1%;
+  }
+
+  .input-group input {
+    width: 60%;
+  }
+}
+
+
+
+
+/* ......................Navbar................ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  margin-top: -100px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.oppie-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  margin-right: 10px;
+}
+
+.signout-btn {
+  background-color: transparent;
+  color: #ff0000;
+  font-weight: 500;
+  /* border: none; */
+  cursor: pointer;
+  font-size: 10px;
+  text-decoration: none; /* Remove underline effect */
+}
+.logosignout{
+  width: 20px;
+  margin-top: 2px;
+}
+.signout{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signout-btn:hover {
+  text-decoration: none; /* Ensure underline effect is removed on hover */
+}
+
+
+@media (max-width: 768px) {
+.navbar{
+  margin-top: 40px;
+}
+}
